@@ -1,0 +1,77 @@
+.searchFilm{
+    padding: 10px 0;
+    // display: flex;
+    &__result{
+        // max-width: 65%;
+        // margin-right: 5px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__items{
+        // width: 20%;
+        position: relative;
+        height: auto;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+    &__items:hover{
+        transform: scale(1.05)  ; /* Phóng to phần tử 5% khi hover */
+        transition: 0.5s;
+    }
+    &__year{
+        position: absolute;
+        top: 0;
+        left: 5;
+        background-image:  linear-gradient(to right, #f0c, #339 51%, #f0c);
+        color: #fff;
+        padding: 0px 10px;
+        border-radius: 10px 0 10px 0;
+    }
+    &__image{
+        // position: relative;
+        width: 100%;
+        height: 100%;
+        // border: 2px solid black;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+        }
+    }
+    &__name{
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;        /* Không cho xuống dòng */
+        overflow: hidden;           /* Ẩn phần nội dung bị tràn */
+        text-overflow: ellipsis;
+        background-color: #202A34;
+        font-weight: 600;
+        cursor: pointer;
+        padding: 5px 3px;
+        font-size: 15px;
+        font-weight: 400;
+        border-radius: 0 0 3px 3px;
+
+    }
+    &__caption{
+        color: orange;
+        font-style: italic;
+        // text-decoration: underline;
+        border-bottom:1px solid orange;
+        max-width: 500px;
+        padding-bottom: 3px;
+        font-weight: 600;
+    }
+    &__noResult{
+        color: #fff;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+}

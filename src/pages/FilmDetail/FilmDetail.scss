@@ -1,0 +1,67 @@
+.filmDetail{
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+    line-height: 35px;
+    &__poster{
+        position: relative;
+        margin-bottom: 20px;
+        img{
+            width: 70%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+    &__trailer{
+        position: absolute;
+        top: 5px;
+        padding: 0 7px;
+        border-radius: 10px;
+        text-decoration: none;
+        left: 70px;
+        color: #fff;
+        background: linear-gradient(135deg, #7f93a7, #1a6eb3);
+        cursor: pointer;
+        &:hover{
+            padding: 2px 9px;
+            transition: 0.3s;
+        }
+    }
+    &__play{
+        position: absolute; 
+        color: #fff;
+        background: linear-gradient(135deg, #cca1c8, #da0cad);
+        cursor: pointer;
+        bottom: 5px;
+        padding: 0 7px;
+        border-radius: 10px;
+        right: 70px;
+        &:hover{
+            padding: 2px 9px;
+            transition: 0.3s;
+        }
+    }
+    &__info{
+        text-align: left;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    &__name{
+        color: #fff;
+        font-weight: 700;
+    }
+    &__content{
+        text-align: left;
+    }
+    &__caption{
+        color: orange;
+        font-weight: 700;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+    &__description{
+        color: #ddd;
+        line-height: 26px;
+        font-size: 16px;
+    }
+}

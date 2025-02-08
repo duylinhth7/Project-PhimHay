@@ -1,0 +1,63 @@
+.filmMovies{
+
+    &__list{
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid #1E2732;
+        border-bottom: 1px solid #1E2732;
+        border-left: 1px solid rgb(121, 58, 90) ;
+        border-radius: 5px 0 0 5px;
+
+    }
+    &__items{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #11171d ;
+        margin-bottom: 5px;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 5px;
+    };
+
+    &__items:hover{
+        background-color: #000;
+        transition: 0.5s ease-in-out ;
+    }
+    &__image{
+        width: 32%;
+        height: auto;
+        border-radius: 5px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: auto;   
+            object-fit: cover;
+            aspect-ratio: 3/4;
+        }
+    }
+    &__name{
+        width: 60%;
+        text-align: left;
+    }
+    &__nameMain{
+        color: rgb(207, 75, 141);
+        font-style: italic;
+        font-weight: 600;
+        font-size: 16px
+    };
+    &__nameSub{
+        color: #ddd;
+        font-size: 14px;
+    }
+
+};
+.caption__block{
+    color: orange;
+    font-style: italic;
+    // text-decoration: underline;
+    border-bottom:1px solid orange;
+    max-width: 100px;
+    padding-bottom: 3px;
+    font-weight: 600;
+}
