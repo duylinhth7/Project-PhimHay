@@ -51,7 +51,7 @@ function FilmHot() {
             {
                 breakpoint: 480, // Điện thoại nhỏ
                 settings: {
-                    slidesToShow: 1, // Hiển thị 1 phim trên điện thoại
+                    slidesToShow: 2, // Hiển thị 1 phim trên điện thoại
                     slidesToScroll: 1,
                 }
             }
